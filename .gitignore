@@ -1,3 +1,15 @@
+####################
+# Author: Ashish Soni 
+# Date: 2024-08-23
+
+/.vscode
+Application_PhD_Sports_Analytics/.DS_Store
+Application_PhD_Sports_Analytics/dist/
+Application_PhD_Sports_Analytics/node_modules/
+Application_PhD_Sports_Analytics/yarn-error.log
+Application_PhD_Sports_Analytics/.observablehq/cache/
+####################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
