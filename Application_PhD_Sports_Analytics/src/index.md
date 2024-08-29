@@ -22,7 +22,7 @@ toc: false
 
 <div class="hero">
 
-<h1 style="font-size: 25px;">Towards Automated Data Analysis and Reporting of Player Performance and Match Analysis using an agentic approach with Multimodal Generative AI models</h1>
+<h1 style="font-size: 25px;">Harnessing AI Agents to Automate Data Analysis and Reporting for Performance Analysis in Soccer using Open Source Large Language models</h1>
 
 </div>
 
