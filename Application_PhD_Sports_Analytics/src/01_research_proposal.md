@@ -1,100 +1,14 @@
 ---
 theme: air
-title: Research Proposal
+title: Project Proposal
 ---
 
-## Introduction
+## Project Motivation
 
-## Background
+**Data analytics** has become a key component in driving decision-making to optimize performance in professional football organizations according to the survey, that explores the characteristics of the data analytics infrastructure across various national federations and professional clubs. The survey also highlights the underemployment of staff with expertise in applied data analytics and general resourcing limitations as major constraints to getting meaningful insights from raw data in professional football organizations.
 
-<!-- Load and transform the data -->
+The field of **Generative Artificial Intelligence** (AI) has given birth to **Large Language Models** (LLMs), also known as **Foundational Models** (FMs), such as **GPT** and **Claude**, that are being used as powerful general-purpose agents for building new AI applications with the ability to perform tasks that require flexible reasoning and planning.
 
-```js
-const launches = FileAttachment("data/launches.csv").csv({typed: true});
-```
+The recent advancements in **Generative AI** has ushered Technology into a new era but solving problems with an agent in a reliable way often requires the agent to be a compound system with multiple components instead of a single query to the model. The agent also requires access to external tools such as search engines, code interpreters and database queries as well as domain-specific manual tuning. A new research has been formulated known as **Automated Design of Agentic Systems** (ADAS) with the aim of automating novel building blocks and designing powerful agentic systems.
 
-<!-- A shared color scale for consistency, sorted by the number of launches -->
-
-```js
-const color = Plot.scale({
-  color: {
-    type: "categorical",
-    domain: d3.groupSort(launches, (D) => -D.length, (d) => d.state).filter((d) => d !== "Other"),
-    unknown: "var(--theme-foreground-muted)"
-  }
-});
-```
-
-<!-- Cards with big numbers -->
-
-<div class="grid grid-cols-4">
-  <div class="card">
-    <h2>United States 🇺🇸</h2>
-    <span class="big">${launches.filter((d) => d.stateId === "US").length.toLocaleString("en-US")}</span>
-  </div>
-  <div class="card">
-    <h2>Russia 🇷🇺 <span class="muted">/ Soviet Union</span></h2>
-    <span class="big">${launches.filter((d) => d.stateId === "SU" || d.stateId === "RU").length.toLocaleString("en-US")}</span>
-  </div>
-  <div class="card">
-    <h2>China 🇨🇳</h2>
-    <span class="big">${launches.filter((d) => d.stateId === "CN").length.toLocaleString("en-US")}</span>
-  </div>
-  <div class="card">
-    <h2>Other</h2>
-    <span class="big">${launches.filter((d) => d.stateId !== "US" && d.stateId !== "SU" && d.stateId !== "RU" && d.stateId !== "CN").length.toLocaleString("en-US")}</span>
-  </div>
-</div>
-
-<!-- Plot of launch history -->
-
-```js
-function launchTimeline(data, {width} = {}) {
-  return Plot.plot({
-    title: "Launches over the years",
-    width,
-    height: 300,
-    y: {grid: true, label: "Launches"},
-    color: {...color, legend: true},
-    marks: [
-      Plot.rectY(data, Plot.binX({y: "count"}, {x: "date", fill: "state", interval: "year", tip: true})),
-      Plot.ruleY([0])
-    ]
-  });
-}
-```
-
-<div class="grid grid-cols-1">
-  <div class="card">
-    ${resize((width) => launchTimeline(launches, {width}))}
-  </div>
-</div>
-
-<!-- Plot of launch vehicles -->
-
-```js
-function vehicleChart(data, {width}) {
-  return Plot.plot({
-    title: "Popular launch vehicles",
-    width,
-    height: 300,
-    marginTop: 0,
-    marginLeft: 50,
-    x: {grid: true, label: "Launches"},
-    y: {label: null},
-    color: {...color, legend: true},
-    marks: [
-      Plot.rectX(data, Plot.groupY({x: "count"}, {y: "family", fill: "state", tip: true, sort: {y: "-x"}})),
-      Plot.ruleX([0])
-    ]
-  });
-}
-```
-
-<div class="grid grid-cols-1">
-  <div class="card">
-    ${resize((width) => vehicleChart(launches, {width}))}
-  </div>
-</div>
-
-Data: Jonathan C. McDowell, [General Catalog of Artificial Space Objects](https://planet4589.org/space/gcat)
+The overarching _goal of the project is to build a compound agentic system using open-source language models_ like **Llama 3.1** released by **Meta AI** to automate data analysis and reporting for performance analysis in soccer. This will serve as a solution to the constraints faced by professional football organizations in turning raw data into meaningful insights to gain a competitive advantage on the field of play.
