@@ -1,21 +1,23 @@
 ---
-title: Potential Impact of the Research
+title: Potential Impact
 ---
 
-The research conducted using these datasets has the potential to revolutionize the field of sports analytics. By leveraging comprehensive data, researchers can uncover new insights into player performance, team strategies, and overall game dynamics. This can lead to more informed decision-making by coaches, improved player training programs, and enhanced fan engagement through deeper understanding of the game. Additionally, the findings could contribute to the development of new technologies and methodologies in sports analytics, further advancing the field.
+The potential impact of research and project completion is as follows:
 
-```js
-import {timeline} from "./components/timeline.js";
-```
+- **Data-Driven Decisions:** The project will empower football organizations with automated data-driven insights leading to informed decisions in Performance Analysis to gain competitive advantage on and off the field.
 
-```js
-const events = FileAttachment("./data/events.json").json();
-```
+- **Resource Optimization:** Using automation in Performance Analysis alleviates the need for hiring a team of Data Analytics Experts, allowing organizations with financial constraints to still access key insights for improvement.
 
-```js
-timeline(events, {height: 300})
-```
+- **Accessibility:** The use of open source language models and technologies will make the AI Data Analyst more accessible and scalable across different levels of football orgnaizations from small clubs to national federations.
 
-## Looking forward
+- **Innovation in Sports Analytics:** The project will contribute to the broader field of sports technology by integrating/embedding AI at the core of data analytics to further advance how technology is used in professional sports.
 
-As technology continues to advance and global interest in  grows, the future promises even more exciting developments in the realm of
+## Dataset
+
+The data to be used for analysis -> *event data/play-by-play data*.
+
+## Technology Stack
+
+**Backend:** Python, Supabase
+
+**Frontend:** Next.js
