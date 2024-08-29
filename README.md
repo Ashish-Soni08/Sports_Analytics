@@ -25,8 +25,7 @@ npm -v # should print `10.8.2`
 
 ````bash
 # 
- cd ./Application_PhD_Sports_Analytics/
+cd ./Application_PhD_Sports_Analytics/
 
 npm run dev
 ```
-
