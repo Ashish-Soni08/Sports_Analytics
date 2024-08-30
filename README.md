@@ -61,4 +61,4 @@ npm run build
 npm run deploy
 ```
 
-The project is live ->  [**Research_Assessment_Submitted_by_Ashish_Soni**](https://ashish-soni08.observablehq.cloud/research-assessment/).
+You can access a live version of the proposal ->  [**Research_Assessment_Submitted_by_Ashish_Soni**](https://ashish-soni08.observablehq.cloud/research-assessment/)
