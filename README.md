@@ -50,3 +50,13 @@ cd ./Application_PhD_Sports_Analytics/
 # Observable Framework’s local development server 
 npm run dev
 ```
+
+```bash
+# Deploying
+
+## To make sure that the project builds without error
+npm run build
+
+## Deploy to Observable
+npm run deploy
+```
