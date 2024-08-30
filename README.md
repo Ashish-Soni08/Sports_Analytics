@@ -60,3 +60,5 @@ npm run build
 ## Deploy to Observable
 npm run deploy
 ```
+
+The project is live ->  [**Research_Assessment_Submitted_by_Ashish_Soni**](https://ashish-soni08.observablehq.cloud/research-assessment/).
