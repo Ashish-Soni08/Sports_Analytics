@@ -35,7 +35,7 @@ toc: false
   </div>
   <div class="card">
   <i>Task Duration</i>: <b>August 23rd to August 31st, 2024</b>
-  <p><i>Submission Date</i>: <b>31 August, 2024</b></p>
+  <p><i>Submission Date</i>: <b>30 August, 2024</b></p>
   <p><i>Submitted by</i>: <code><b>Ashish Soni</b></code></p>
   </div>
 </div>
